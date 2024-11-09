@@ -11,14 +11,47 @@ public class Employee {
     @Column(name = "id")
     private long idName;
 
-    @Column(name = "fullName")
-    private String fullName;
+    @Column(name = "Name")
+    private String Name;
+
+    @Column(name = "Lastname")
+    private String lastName;
 
     @ManyToOne
     @JoinColumn(name = "role")
     private Role role;
 
+
 // AQUI EMPIEZAN LOS GETTERS Y SETTERS
+    public long getId() {
+        return id;
+    }
 
+    public void setId(long id) {
+        this.id = id;
+    }
 
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
 }
