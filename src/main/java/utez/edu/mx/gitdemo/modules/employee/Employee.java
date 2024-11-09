@@ -9,7 +9,7 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private long id;
+    private long idName;
 
     @Column(name = "fullName")
     private String fullName;
@@ -18,7 +18,7 @@ public class Employee {
     @JoinColumn(name = "role")
     private Role role;
 
-
+// AQUI EMPIEZAN LOS GETTERS Y SETTERS
 
 
 }
